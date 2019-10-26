@@ -16,7 +16,7 @@
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <a class="navbar-brand" href="#">Teachify</a>
+        <%= link_to 'Teachify', root_path, class: 'navbar-brand' %>
         
 
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
@@ -24,7 +24,7 @@
           <ul class="navbar-nav mr-auto mt-2 mt-md-0">
             <li class="nav-item">
             <i class="fa fa-graduation-cap"></i>
-              <a class="nav-link" href="#">Start Learning!</a>
+              <%= link_to 'Start Learning!', '#', class: 'nav-link' %>
             </li>
           </ul>
         <!--end top nav page links-->
@@ -62,9 +62,9 @@
   <!--footer-->
     <div id="footer">
       <div class="container">
-        <b>Footer Here</b>
+        <b>Teachers</b>
         <br />
-        <%= link_to 'Link', '#' %>
+        <%= link_to 'Teach a Course', new_instructor_course_path %>
       </div>
     </div>
   <!--end footer-->
