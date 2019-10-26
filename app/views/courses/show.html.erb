@@ -4,7 +4,7 @@
   <h1><%= @course.title %></h1>
   <br />
   <div class="row">
-  
+
     <div class="col-sm-4 col-12 text-center">
       <span class="badge badge-default">
         <%= number_to_currency @course.cost %>
@@ -30,9 +30,11 @@
         <%= section.title %>
         <% section.lessons.each do |lesson| %>
           <div class="lesson">
-            <b><%= lesson.title %></b>
-            -
-            <%= lesson.subtitle %>
+            <%= link_to lesson_path(lesson) do %>
+              <b><%= lesson.title %></b>
+              -
+              <%= lesson.subtitle %>
+            <% end %>
           </div>
         <% end %>
       </div>
