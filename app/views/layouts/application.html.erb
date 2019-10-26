@@ -16,15 +16,17 @@
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <%= link_to 'Teachify', root_path, class: 'navbar-brand' %>
+        <%= link_to 'Teachify', root_url, class: 'navbar-brand' %>
         
 
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
         <!--top nav page links-->
           <ul class="navbar-nav mr-auto mt-2 mt-md-0">
             <li class="nav-item">
-            <i class="fa fa-graduation-cap"></i>
-              <%= link_to 'Start Learning!', '#', class: 'nav-link' %>
+              <%= link_to courses_path, class: 'nav-link' do %>
+                <i class="fa fa-graduation-cap"></i>
+                Start Learning!
+              <% end %>
             </li>
           </ul>
         <!--end top nav page links-->
