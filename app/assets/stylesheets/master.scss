@@ -1,6 +1,6 @@
 //main css and imports
 @import "bootstrap";
-@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway|Ubuntu&display=swap');
 @import "font-awesome";
 
 h1, h2, h3, h4, h5, h6, .navbar {
@@ -76,18 +76,19 @@ body {
   color: white;
 }
 .frosty h1 {
-  font-family: "Helvetica Neue", Helvetica;
+  font-family: 'Ubuntu', sans-serif;
   font-weight: 100;
   text-shadow: rgba(0, 0, 0, 0.95) 1px 1px;
 }
 
 .frosty h2 {
-  font-family: "Helvetica Neue", Helvetica;
+  font-family: 'Ubuntu', sans-serif;
   font-weight: 200;
   text-shadow: rgba(0, 0, 0, 0.95) 1px 1px;
 }
 .btn {
   border-radius: 0;
+  font-family: 'Raleway', sans-serif;
 }
 
 //features
@@ -148,7 +149,7 @@ body {
 }
 //end boxshadow
 
-
+//misc
 .invalid-feedback {
   color: #ff3333;
   background-color: #FFEEEE;
@@ -159,4 +160,27 @@ body {
 
 .clr {
   clear: both;
+}
+//end misc
+//course view for students
+.lesson {
+  background-color: black;
+  margin-top: 10px;
+  height: 130px;
+}
+.lesson a {
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 100;
+  font-size: 15px;
+}
+.lesson a b {
+  font-weight: 100;
+  font-size: 25px;
+}
+.section {
+  border: 1px solid;
+  border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
+  padding: 20px;
+  font-family: 'Ubuntu', sans-serif;
 }
