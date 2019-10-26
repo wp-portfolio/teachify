@@ -16,6 +16,9 @@
       <div class="col-sm-4 col-12 text-center">
         <%= link_to 'View Course', course_path(course), class: 'btn btn-primary btn-large' %>
       </div>
+      <% if course.image.present? %>
+        <%= image_tag course.image.url, class: 'img-fluid' %>
+      <% end %>
     </div>
     <br class="clr" />
     <hr />
