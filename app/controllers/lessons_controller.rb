@@ -11,7 +11,7 @@ class LessonsController < ApplicationController
   def current_lesson
     @current_lesson ||= Lesson.find(params[:id])
   end
-  #can add another layer here if I want super users (such as paid vs free)
+  #can add another layer here if I want super users
   def require_teacher_or_enrolled_user
     current_course = current_lesson.section.course
     redirect_to course_path(current_course), alert: "Enroll to access the lessons!" unless current_user.enrolled_in?(current_course) || current_user.courses.include?(current_course)
